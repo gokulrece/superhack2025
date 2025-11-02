@@ -1,0 +1,228 @@
+{
+  "alerts": [
+    {
+      "title": "Server CPU Spike",
+      "severity": "Critical",
+      "status": "Active",
+      "source": "MonitoringAgent",
+      "timestamp": "2025-11-02T10:20:00",
+      "description": "High CPU usage detected in Node 12."
+    },
+    {
+      "title": "Database Latency",
+      "severity": "High",
+      "status": "Resolved",
+      "source": "DBMonitor",
+      "timestamp": "2025-11-02T08:30:00",
+      "description": "Slow query response on main DB cluster."
+    },
+    {
+      "title": "Memory Leak Detected",
+      "severity": "Medium",
+      "status": "Active",
+      "source": "AppHealthAgent",
+      "timestamp": "2025-11-02T09:45:00",
+      "description": "Service XYZ is consuming excess memory over time."
+    },
+    {
+      "title": "Unauthorized Login Attempt",
+      "severity": "High",
+      "status": "Acknowledged",
+      "source": "SecurityAgent",
+      "timestamp": "2025-11-02T09:00:00",
+      "description": "Multiple failed login attempts detected from external IP."
+    },
+    {
+      "title": "Network Packet Loss",
+      "severity": "Low",
+      "status": "Resolved",
+      "source": "NetworkMonitor",
+      "timestamp": "2025-11-01T08:00:00",
+      "description": "Packet drop observed on VLAN-24 interface."
+    },
+    {
+      "title": "Disk Utilization Warning",
+      "severity": "Medium",
+      "status": "Active",
+      "source": "StorageAgent",
+      "timestamp": "2025-11-02T09:10:00",
+      "description": "Disk usage above 85% on Server Node-7."
+    },
+    {
+      "title": "SSL Certificate Expiry",
+      "severity": "High",
+      "status": "Active",
+      "source": "SecurityAgent",
+      "timestamp": "2025-11-02T06:15:00",
+      "description": "SSL certificate for portal.kiro.ai will expire in 3 days."
+    },
+    {
+      "title": "Service Timeout",
+      "severity": "Critical",
+      "status": "Active",
+      "source": "AppMonitor",
+      "timestamp": "2025-11-02T10:25:00",
+      "description": "Timeout errors detected in authentication microservice."
+    },
+    {
+      "title": "Patch Deployment Failure",
+      "severity": "High",
+      "status": "Resolved",
+      "source": "PatchManager",
+      "timestamp": "2025-11-02T07:00:00",
+      "description": "Rollback executed after failed patch deployment."
+    },
+    {
+      "title": "Queue Backlog Alert",
+      "severity": "Medium",
+      "status": "Acknowledged",
+      "source": "WorkflowEngine",
+      "timestamp": "2025-11-02T08:50:00",
+      "description": "High message backlog in Kafka topic: events-stream."
+    }
+  ],
+  "patches": [
+    {
+      "name": "Patch_1.2.3",
+      "impact": "Medium",
+      "status": "Deployed",
+      "conflict": "None",
+      "summary": "Routine OS security patch for Linux kernel."
+    },
+    {
+      "name": "Patch_1.2.4",
+      "impact": "High",
+      "status": "Pending",
+      "conflict": "May overlap with Patch_1.2.3",
+      "summary": "Database driver update."
+    },
+    {
+      "name": "Patch_2.0.1",
+      "impact": "Low",
+      "status": "Deployed",
+      "conflict": "None",
+      "summary": "Minor UI fixes and performance enhancements."
+    },
+    {
+      "name": "Patch_2.1.0",
+      "impact": "High",
+      "status": "Testing",
+      "conflict": "Requires DB schema migration",
+      "summary": "Application backend upgrade."
+    },
+    {
+      "name": "Patch_2.1.1",
+      "impact": "Medium",
+      "status": "Scheduled",
+      "conflict": "Potential overlap with Patch_2.1.0",
+      "summary": "Security fix for authentication module."
+    },
+    {
+      "name": "Patch_3.0.0",
+      "impact": "Critical",
+      "status": "Pending",
+      "conflict": "Major version upgrade",
+      "summary": "Infrastructure stack modernization rollout."
+    },
+    {
+      "name": "Patch_3.0.1",
+      "impact": "Medium",
+      "status": "Deployed",
+      "conflict": "None",
+      "summary": "Critical bug fixes post 3.0.0 upgrade."
+    },
+    {
+      "name": "Patch_3.1.0",
+      "impact": "Low",
+      "status": "Planned",
+      "conflict": "None",
+      "summary": "Feature enhancements and log optimizations."
+    },
+    {
+      "name": "Patch_3.1.1",
+      "impact": "High",
+      "status": "Pending Approval",
+      "conflict": "Requires downtime window",
+      "summary": "Critical fix for data sync module."
+    },
+    {
+      "name": "Patch_3.2.0",
+      "impact": "Medium",
+      "status": "Under Review",
+      "conflict": "Depends on Patch_3.1.1",
+      "summary": "Refactoring deployment pipeline configurations."
+    }
+  ],
+  "tasks": [
+    {
+      "title": "Check Patch Logs",
+      "priority": "High",
+      "status": "Open",
+      "relatedTo": "Patch_1.2.3",
+      "summary": "Verify successful deployment of OS patch."
+    },
+    {
+      "title": "Analyze CPU Spike",
+      "priority": "Medium",
+      "status": "In Progress",
+      "relatedTo": "Server CPU Spike",
+      "summary": "Investigate root cause of alert."
+    },
+    {
+      "title": "Restart Database Node",
+      "priority": "High",
+      "status": "Completed",
+      "relatedTo": "Database Latency",
+      "summary": "Restarted DB node to clear latency."
+    },
+    {
+      "title": "Review Memory Leak",
+      "priority": "High",
+      "status": "Open",
+      "relatedTo": "Memory Leak Detected",
+      "summary": "Debug memory heap usage in Service XYZ."
+    },
+    {
+      "title": "Validate SSL Renewal",
+      "priority": "Medium",
+      "status": "Planned",
+      "relatedTo": "SSL Certificate Expiry",
+      "summary": "Check renewal process before expiry date."
+    },
+    {
+      "title": "Network Interface Cleanup",
+      "priority": "Low",
+      "status": "Open",
+      "relatedTo": "Network Packet Loss",
+      "summary": "Clear stale routes on VLAN-24."
+    },
+    {
+      "title": "Patch Conflict Assessment",
+      "priority": "Medium",
+      "status": "In Progress",
+      "relatedTo": "Patch_2.1.0",
+      "summary": "Validate dependency with existing DB schema."
+    },
+    {
+      "title": "Queue Optimization",
+      "priority": "Medium",
+      "status": "Planned",
+      "relatedTo": "Queue Backlog Alert",
+      "summary": "Tune Kafka consumer group configs."
+    },
+    {
+      "title": "Re-run Patch Deployment",
+      "priority": "High",
+      "status": "Pending",
+      "relatedTo": "Patch Deployment Failure",
+      "summary": "Reattempt deployment after issue fix."
+    },
+    {
+      "title": "Audit Security Logs",
+      "priority": "High",
+      "status": "In Progress",
+      "relatedTo": "Unauthorized Login Attempt",
+      "summary": "Cross-check with SIEM for correlation."
+    }
+  ]
+}
