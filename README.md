@@ -166,13 +166,7 @@ Includes narration + live dashboard walkthrough.
 
 ## 📘 Prototype Deck
 
-📄 [Download Prototype Deck (PDF)](https://drive.google.com/your-pdf-link)
-
----
-
-## 🧑‍💻 GitHub Repository
-
-🔗 **[https://github.com/GraspAI/Kiro-Agentic-AI](https://github.com/GraspAI/Kiro-Agentic-AI)**
+📄 [Download Prototype Deck (PDF)](https://drive.google.com/file/d/1ENdX3NzocLzYV46qDDCZPFe9P1vHW0Rt/view?usp=drive_link)
 
 ---
 
@@ -206,12 +200,7 @@ Includes narration + live dashboard walkthrough.
 ---
 
 > *Built with ❤️ using Java, React, and AWS Agentic AI.*
-
-```
-
----
-
-Would you like me to generate the **`README.md` file (downloadable)** now with your real **demo video link** and **PDF deck link** placeholders filled in automatically?  
+ 
 If yes, please share your:
 - 🧾 **Google Drive PDF link**
 - 🎥 **Demo video link**
